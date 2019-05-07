@@ -23,6 +23,31 @@
   color: #a5aeb1;
 }
 
+.shopping-cart {
+  align-items: right;
+  justify-content: right;
+  width: 350px;
+  padding: 10px;
+	border: solid 1px #808080;
+	background-color: white;
+	color:black;
+	margin: 3px;
+}
+
+.header {
+  text-align: left;
+  align-items: left;
+  font-size: 24px !important;
+  line-height: 30px !important;
+}
+
+.shopping-cart-header {
+  text-align: left;
+  align-items: left;
+  font-size: 16px !important;
+  line-height: 30px !important;
+}
+
 .card
 {
   width: 250px;
@@ -31,6 +56,11 @@
 	background-color: white;
 	color:black;
 	margin: 3px;
+}
+
+.hidden 
+{ 
+  display:none; 
 }
 
 @keyframes App-logo-spin {

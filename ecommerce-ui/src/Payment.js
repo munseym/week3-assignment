@@ -11,7 +11,7 @@ class Payment extends React.Component {
     render() {
         return (
             <div>
-                <span>{this.props.payment.cost}</span>
+                <span>Cost: {this.props.payment.cost}</span>
                 <span>{this.props.payment.description ? `, ${this.props.payment.description}` : ''}</span>
             </div>
         );

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Host extends React.Component {
     static propTypes = {
         host: PropTypes.shape({
-            name: PropTypes.number,
+            name: PropTypes.string,
             isSuperhost: PropTypes.bool
         }).isRequired
     }

@@ -1,15 +1,27 @@
 import React from 'react';
-import airbnbs from './airbnbs.json';
 import Rental from './Rental';
 
-class RentalList extends React.Component {
-    render(){
+export default class RentalList extends React.Component {
+    render() {
+        const rentalList = this.props.rentals
+            .map((rental, idx) => {
+                return (
+                    <Rental
+                        rental={rental}
+                        onClick={this.props.onAddRental}
+                        idx={idx}
+                        key={idx}
+                        buttonText='Add to cart'
+                    />
+                );
+            });
+
         return (
             <div>
-                {airbnbs.map((rental, i) => <Rental key={i} {...rental}/>)}
+                <ul>
+                    {rentalList}
+                </ul>
             </div>
         );
     }
 }
-
-export default RentalList;
