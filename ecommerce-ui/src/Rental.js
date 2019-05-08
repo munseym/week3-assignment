@@ -16,7 +16,7 @@ class Rental extends React.Component {
                 <Payment payment={rental.payment} />
                 <Rating rating={rental.rating} />
                 <button 
-                    onClick={() => onClick(idx)}>{buttonText ? buttonText : 'Remove from cart'}
+                    onClick={() => onClick(idx)}>{buttonText}
                 </button>
             </div>
         );
