@@ -12,8 +12,7 @@ class Rating extends React.Component {
     render() {
         return (
             <div>
-                <span>{this.props.rating.stars} stars</span>
-                <span>&nbsp;{this.props.rating.reviews} reviews</span>
+                {this.props.rating.stars} stars {this.props.rating.reviews} reviews
             </div>
         );
     }

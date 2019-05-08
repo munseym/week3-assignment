@@ -8,6 +8,7 @@ class Rental extends React.Component {
 
     render(){
         const {rental, onClick, idx, buttonText} = this.props;
+        console.log(this);
 
         return (
             <div className="card">

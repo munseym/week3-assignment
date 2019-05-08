@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 class Payment extends React.Component {
     static propTypes = {
         payment: PropTypes.shape({
-            cost: PropTypes.number,
+            cost: PropTypes.number.isRequired,
             description: PropTypes.string
         }).isRequired
     }

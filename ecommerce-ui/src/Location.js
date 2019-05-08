@@ -11,8 +11,7 @@ class Location extends React.Component {
     render() {
         return (
             <div>
-                <span>{this.props.location.city}</span>,&nbsp;
-                <span>{this.props.location.country}</span>
+                {this.props.location.city}, {this.props.location.country}
             </div>
         );
     }
